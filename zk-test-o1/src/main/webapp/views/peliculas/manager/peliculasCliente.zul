@@ -1,0 +1,30 @@
+<?page title="VideoCapitol-Peliculas Cliente" contentType="text/html;charset=UTF-8"?>
+<?init class="org.test.zk.security.CCheckAuthenticated"?>
+<zk>
+	<window id="windowPeliculasCliente"
+		apply="org.test.zk.controllers.pelicula.manager.peliculasClienteController"
+		title="Catalogo de peliculas para reservar" border="none"
+		position="center,center">
+
+		<vlayout width="100%">
+			<listbox id="listboxPeliculas" width="100%"
+				height="300px">
+
+				<listhead sizable="true">
+					<listheader label="Id" sort="auto" />
+					<listheader label="Titulo" sort="auto" />
+					<listheader label="Descripción" sort="auto" />
+					<listheader label="Director" sort="auto" />
+					<listheader label="Actores" sort="auto" />
+					<listheader label="Cantidad" sort="auto" />
+				</listhead>
+
+			</listbox>
+			<div id="divButtonCont">
+
+				<button id="btnReserva" label="Reservar"
+					style="float:right;magin-left:5px" />
+			</div>
+		</vlayout>
+	</window>
+</zk>

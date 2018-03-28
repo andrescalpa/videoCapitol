@@ -1,0 +1,33 @@
+<?page title="VideoCapitol-Peliculas" contentType="text/html;charset=UTF-8"?>
+<?init class="org.test.zk.security.CCheckAuthenticated"?>
+<zk>
+	<window id="windowPeliculas" apply="org.test.zk.controllers.pelicula.manager.peliculasController"
+		title="Bienvenidos a VideoCapitol" border="normal"
+		position="center,center">
+
+		<vlayout width="100%">
+			<listbox id="listboxPeliculas" width="100%"
+				height="300px">
+
+				<listhead sizable="true">
+					<listheader label="Id" sort="auto" />
+					<listheader label="Titulo" sort="auto" />
+					<listheader label="Descripción" sort="auto" />
+					<listheader label="Director" sort="auto" />
+					<listheader label="Actores" sort="auto" />
+					<listheader label="Cantidad" sort="auto" />
+				</listhead>
+
+			</listbox>
+			<div id="divButtonCont">
+				<button id="btnAdd" label="Agregar"
+					style="float:right;magin-left:5px" />
+				<button id="btnModify" label="Modificar"
+					style="float:right;magin-left:5px" />
+				<button id="btnDelete" label="Borrar"
+					style="float:right;magin-left:5px" />
+				<button id="btnRefresh" label="Refresh" />
+			</div>
+		</vlayout>
+	</window>
+</zk>

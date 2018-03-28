@@ -1,0 +1,25 @@
+<?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c" ?>
+<zk>
+
+	<div hflex="1" vflex="1" sclass="banner">
+
+		<hbox hflex="1" vflex="1" align="center">
+
+			<a>
+
+				<image src="/resources/images/logo.png"
+					width="90px" />
+
+			</a>
+
+			<div width="700px">
+
+				<label value="Video Capitol - Las mejores Peliculas" sclass="banner-head" />
+
+			</div>
+
+		</hbox>
+
+	</div>
+
+</zk>

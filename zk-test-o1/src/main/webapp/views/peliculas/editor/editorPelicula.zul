@@ -1,0 +1,92 @@
+<?page title="Registrar Peliculas" contentType="text/html;charset=UTF-8"?>
+<?init class="org.test.zk.security.CCheckAuthenticated"?>
+<zk>
+	<window id="windowRegistrarP" xmlns:w="client"
+		position="center, center"
+		apply="org.test.zk.controllers.pelicula.editor.editorPeliculaController"
+		title="Registrar Pelicula" border="normal" hflex="min" width="60%">
+
+		<vlayout width="100%">
+
+			<grid>
+
+				<rows>
+
+					<row>
+
+						<label id="labelId" value="Id:"
+							width="150px" />
+						<textbox id="textboxId" value=""
+							width="310px" tabindex="1">
+
+						</textbox>
+
+					</row>
+
+					<row>
+
+						<label id="labelTitulo" value="Titulo:"
+							width="150px" />
+						<textbox id="textboxTitulo" value=""
+							width="310px" tabindex="1">
+
+						</textbox>
+
+					</row>
+
+					<row>
+
+						<label id="labelDescripcion"
+							value="Descripción:" width="150px" />
+						<textbox id="textboxDescripcion" value=""
+							width="310px" tabindex="2" />
+
+					</row>
+
+					<row>
+
+						<label id="labelActores" value="Actores:"
+							width="150px" />
+						<textbox id="textboxActores" value=""
+							width="310px" tabindex="3" />
+
+					</row>
+
+					<row>
+
+						<label id="labelDirector" value="Director:"
+							width="150px" />
+						<textbox id="textboxDirector" value=""
+							width="310px" tabindex="3" />
+
+					</row>
+
+					<row>
+
+						<label id="labelCantidadInv"
+							value="Cantidad Inventario:" width="150px" />
+						<textbox id="textboxTCantidadInv" value=""
+							width="40px" tabindex="3" />
+					</row>
+
+					<row>
+
+					</row>
+
+				</rows>
+
+			</grid>
+
+			<div id="divButtonContainer">
+
+				<button id="buttonCancel" label="Cancelar"
+					style="float:right; margin-left:5px;" />
+				<button id="buttonAccept" label="Aceptar"
+					style="float:right; margin-left:5px;" />
+
+			</div>
+
+		</vlayout>
+
+	</window>
+</zk>

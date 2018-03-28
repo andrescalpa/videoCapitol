@@ -1,0 +1,58 @@
+<?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c" ?>
+<?link rel="stylesheet" type="text/css" href="resources/styles/login.style.css"?>
+<zk>
+
+	<window id="windowLogin"
+		apply="org.test.zk.controllers.login.CLoginController"
+		title="Ingrese con su usuario y contraseña" border="normal"
+		hflex="min">
+
+		<vbox hflex="min" align="center">
+
+			<grid sclass="gridLayoutNoBorder" hflex="min">
+
+				<columns>
+
+					<column hflex="min" align="right" />
+
+					<column />
+
+				</columns>
+
+				<rows>
+
+					<row>
+
+						<label value="Usuario:" />
+
+						<textbox constraint="no empty"
+							id="textboxUserName" width="200px" />
+
+					</row>
+
+					<row>
+
+						<label value="Contraseña:" />
+
+						<textbox constraint="no empty"
+							id="textboxPassword" type="password" width="200px" />
+
+					</row>
+
+				</rows>
+
+			</grid>
+
+			<label id="labelMessage" sclass="warn" value="&#160;" />
+
+			<button id="buttonLogin" label="Login" />
+
+			<label id="labelForgotPassword" value="¿Olvidó la contraseña?"
+				style="cursor:hand;cursor:pointer" />
+
+		</vbox>
+		<timer id="timerKeepAliveSession" repeats="true" delay="120000" />
+
+	</window>
+
+</zk>
